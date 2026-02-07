@@ -1,0 +1,13 @@
+.vscode/**
+.github/**
+src/**
+example.ts
+eslint.config.mjs
+tsconfig.json
+.prettierignore
+.gitignore
+*.vsix
+**/*.vsix
+dist/**/*.map
+*.tsbuildinfo
+.DS_Store

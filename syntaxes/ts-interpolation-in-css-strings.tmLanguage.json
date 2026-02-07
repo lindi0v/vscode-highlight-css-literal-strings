@@ -1,0 +1,19 @@
+{
+  "scopeName": "injection.ts-interpolation-in-css-strings",
+  "injectionSelector": "L:meta.embedded.block.css.template -comment",
+  "patterns": [
+    {
+      "name": "meta.embedded.expression.ts",
+      "begin": "\\$\\{",
+      "beginCaptures": {
+        "0": { "name": "punctuation.section.embedded.begin" }
+      },
+      "end": "\\}",
+      "endCaptures": {
+        "0": { "name": "punctuation.section.embedded.end" }
+      },
+      "contentName": "source.ts",
+      "patterns": [{ "include": "source.ts" }]
+    }
+  ]
+}

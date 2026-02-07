@@ -1,0 +1,48 @@
+{
+  "scopeName": "injection.css-in-ts",
+  "injectionSelector": "L:source -comment",
+  "patterns": [
+    {
+      "name": "meta.embedded.block.css.template",
+      "begin": "(\\/\\*\\s*css\\s*\\*\\/)\\s*(`)",
+      "beginCaptures": {
+        "1": { "name": "comment.block" },
+        "2": { "name": "punctuation.definition.string.begin" }
+      },
+      "end": "(?<!\\\\)`",
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.string.end" }
+      },
+      "contentName": "source.css.scss",
+      "patterns": [{ "include": "source.css.scss" }]
+    },
+    {
+      "name": "meta.embedded.block.scss.template",
+      "begin": "(\\/\\*\\s*scss\\s*\\*\\/)\\s*(`)",
+      "beginCaptures": {
+        "1": { "name": "comment.block" },
+        "2": { "name": "punctuation.definition.string.begin" }
+      },
+      "end": "(?<!\\\\)`",
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.string.end" }
+      },
+      "contentName": "source.css.scss",
+      "patterns": [{ "include": "source.css.scss" }]
+    },
+    {
+      "name": "meta.embedded.block.less.template",
+      "begin": "(\\/\\*\\s*less\\s*\\*\\/)\\s*(`)",
+      "beginCaptures": {
+        "1": { "name": "comment.block" },
+        "2": { "name": "punctuation.definition.string.begin" }
+      },
+      "end": "(?<!\\\\)`",
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.string.end" }
+      },
+      "contentName": "source.css.less",
+      "patterns": [{ "include": "source.css.less" }]
+    }
+  ]
+}
