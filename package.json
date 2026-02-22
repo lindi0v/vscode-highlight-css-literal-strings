@@ -2,7 +2,7 @@
   "name": "highlight-css-strings",
   "displayName": "VSCode Highlight CSS Strings",
   "description": "Highlights and provides CSS IntelliSense in template strings marked with /* css */ in TS/JS.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "lindi0v",
   "license": "CC0-1.0",
   "repository": {
