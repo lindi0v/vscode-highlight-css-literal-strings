@@ -3,7 +3,8 @@
   "compilerOptions": {
     "outDir": "dist-test",
     "rootDir": ".",
-    "sourceMap": false
+    "sourceMap": false,
+    "types": ["node", "mocha", "vscode"]
   },
   "include": ["src/**/*", "test/**/*"]
 }
